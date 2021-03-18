@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Sergio Lopez
+        {% endblock %}
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='{% static "home/CSS/style.css" %}' type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <header>
+            <div class="contenedor">
+                <div class="slider">
+                    <!--comienzo de radio del boton-->
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <div class="slide first">
+                            <img src='{% static "home/img/desarrollador.jpg" %}' alt="">
+                        </div>
+                        <div class="slide">
+                            <img src='{% static "home/img/economia.jpg" %}' alt="">
+                        </div>
+                        <div class="slide">
+                            <img src='{% static "home/img/analisisdatos.jpg" %}' alt="">
+                        </div>
+
+                        <!--slide navigation end-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>    
+                </div>    
+                <div class="texto-encima">Sergio Lopez</div>
+                <div class="centrado">Web Developer</div>
+            </div>
+        </header>
+        
+        <section id="header">
+            <div class="container">
+
+                <img class="logo2" src='{% static "home/img/nerd.png" %}'></img>
+                <nav class="main_menu">
+                    <ul>
+                        <li>
+                            <a class="active" href="#home">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#aboutme">Sobre mi</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#portafolio">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#tecnologia">Tecnologia</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#blog">blog</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </div>
+    <section class="container_row" id="aboutme">
+        <div class="container">
+            <h2 class="titulo_1">Sobre mi</h2>
+            <div class="box1">
+                <div>
+                    <img src='{% static "home/img/sergio.jpg" %}' alt="">
+                </div>
+                <p>
+                    “La creatividad y el conocimiento van de la mano para crear nuevas herramientas, y la economía y la tecnología, son la 4ta revolución industrial, es por ello que estoy en pleno crecimiento en ambas ciencias”
+                </p>
+            </div>
+            <div class="caja1">
+                <div>
+                    <img src='{% static "home/img/programacion.png" %}' alt="">
+                </div>
+                <h3>Desarrollo web</h3>
+                <p>
+                    “La creación de las plataformas Web, son las futuras tiendas que las personas visitaran, es por ello que tienes que estar preparado de una vez por todas, para tener lista tu tienda virtual, con los mejores interfaces e interacciones que pueden tener tus clientes a la hora de comprar tus productos”
+                </p>
+            </div>
+            <div class="caja2">
+                <div>
+                    <img src='{% static "home/img/finanzas.png" %}' alt="">
+                </div>
+                <h3>Finanzas</h3>
+                <p>
+                    “la economía es la ciencia que administra los recursos escasos en esta época de necesidades infinitas, es por ello que debes administrar mejor tus finanzas, ahorro para tiempos de crisis, inversiones para potenciar tu dinero, y organización para mejorar en el crecimiento personal y empresarial”
+                </p>
+            </div>
+            <div class="caja3">
+                <div>
+                    <img src='{% static "home/img/datos.png" %}' alt="">
+                </div>
+                <h3>Analista de datos</h3>
+                <p>
+                    “las empresas recurren a los datos, porque la mejor manera de vender tus productos es conociendo a las personas, es por eso que saber recolectar datos, tiene que ser una opción para llegar a las emociones de tus clientes y poder maximizar tus beneficios”
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container_row" id="portafolio">
+        <div class="container">
+            <h2>Portafolio</h2>
+            <div>
+                <div class="Titulo_portafolio1">
+                    <img src='{% static "home/img/portafolio.jpg" %}' alt="">
+                    <H3>Blog</H3>
+                    <p>Blog personal desarrollado con python y django, con tecnologias como Sass, Boobstrap, JavaScript.</p>
+                    <button>Ver video</button>
+                </div>
+                <div class="Titulo_portafolio2">
+                    <img src='{% static "home/img/portafolio.jpg" %}' alt="">
+                    <H3>IndumentariaOnline</H3>
+                    <p>Proyecto integrador del curso python y django.</p>
+                    <button>Ver video</button>
+                </div>
+                <div class="Titulo_portafolio3">
+                    <img src='{% static "home/img/home.png" %}' alt="">
+                    <H3>Portafolio</H3>
+                    <p>Portafolio personal desarrollado con python y django, CSS y Javascript.</p>
+                    <button>Ver video</button>
+                </div>
+
+                
+        </div>
+    </section>
+    <section class="container_row" id="tecnologia">
+        <div class="container">
+            <div class="titulo2">
+                <h2>Tecnologia</h2>
+                <p>
+                    Herramientas que ayudan al desarrollo de cualquier proyecto<br>
+                    <em>¡Siempre en mejora continua!</em>
+                </p>    
+            </div>
+            <div class="boxtecno">
+                <div class="cajatecno">
+                    <img src='{% static "home/img/html.png" %}' alt="">
+                </div>
+                <div class="cajatecno2">
+                    <img src='{% static "home/img/css.png" %}' alt="">
+                </div>
+                <div class="cajatecno3">
+                    <img src='{% static "home/img/js.png" %}' alt="">
+                </div>
+                <div class="cajatecno4">
+                    <img src='{% static "home/img/python.png" %}' alt="">
+                </div>
+                <div class="cajatecno5">
+                    <img src='{% static "home/img/django.png" %}' alt="">
+                </div>
+                <div class="cajatecno6">
+                    <img src='{% static "home/img/jquery.png" %}' alt="">
+                </div>
+                <div class="cajatecno7">
+                    <img src='{% static "home/img/sass.png" %}' alt="">
+                </div>
+                <div class="cajatecno8">
+                    <img src='{% static "home/img/mysql.png" %}' alt="">
+                </div>
+                <div class="cajatecno9">
+                    <img src='{% static "home/img/sqlserver.png" %}' alt="">
+                </div>
+                <div class="cajatecno10">
+                    <img src='{% static "home/img/powerbi.png" %}' alt="">
+                </div>
+                <div class="cajatecno11">
+                    <img src='{% static "home/img/git.png" %}' alt="">
+                </div>
+                <div class="cajatecno12">
+                    <img src='{% static "home/img/react.png" %}' alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="container_row" id="blog">
+        <div class="container">
+            <div class="Box2">
+                <div>
+                    <h2>Blog</h2>
+                    <p><em>"El conocimiento es un arma muy poderosa".</em></p>
+                </div>
+                <div class="Caja_texto">
+                    <div>
+                        <p>Vamos a conocer un mundo completamente nuevo, tu y yo, ven a acompañarme en este pequeño proyecto personal como lo es mi blog.</p>
+                        <p>Este contenido va dirigido específicamente a un publico con ansias de conocimientos.</p> 
+                        <p>Te preguntaras <em>¿Qué tipo de conocimiento?</em></p>
+                        <p>Pues un poco de conocerme, y otro poco de conocer los temas que me apasionan y que seguramente a ti te apasionaran, como la economía, el mundo de la tecnología digital, y los datos. <br>
+                        Entra a conocerme, y te invito a que hablemos por esta nueva plataforma.</p>
+
+                    </div>
+                </div>
+                <div class="imagenblog">
+                    <img src='{% static "home/img/blog.jpg" %}' alt="">
+                </div>
+                <div class="boton">
+                    <a href="#">
+                        <button >¡Entra!</button>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section class="container_row" id="contacto">
+        <div class="container">
+            <div class="textcontacto">
+                <h2>Contactos</h2>
+                <p>
+                    Si tienes una idea, y quieres desarrollarla…¡Contáctame!<br>
+                    <em>“Todo lo que pienses se puede programar”</em>
+                </p>
+            </div>
+            <div class="forms">
+                <form method="post">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <input class="buttom" type="submit" value="Enviar mensaje" id="myBtn">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>!Mensaje enviado!</h2>
+                              </div>
+                              <div class="modal-body">
+                                <img src='{% static "home/img/check.png" %}' alt="">
+                                <p>Tu mensaje fue enviado correctamente</p>
+                                <p>en breve nos comunicaremos contigo.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <h3>!Es hora de programar</h3>
+                              </div>
+                        </div>
+  
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="Redes">
+            <a href="https://www.facebook.com/"  class="class1"><img src='{% static "home/img/Facebook.png" %}' ></a>
+            <a href="https://github.com/Serlopez149" class="class2"><img src='{% static "home/img/github.png" %}' ></a>
+            <a href="https://www.linkedin.com/in/sergio-manuel-l%C3%B3pez-garc%C3%ADa-82bb051ab/" class="class3"><img src='{% static "home/img/linkedIn.png" %}'></a>
+        </div>
+    </section>
+    <footer> 
+        <small>
+             &copy; Copyright 2021 Todos los derechos reservados | Creado por<a href="https://www.linkedin.com/in/sergio-manuel-l%C3%B3pez-garc%C3%ADa-82bb051ab/"> Sergio Lopez</a>
+        </small> 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src='{% static "home/custom.js" %}'></script> 
+    <script src='{% static "home/script.js" %}'></script>
+    <script src='{% static "home/modal.js" %}'></script> 
+</body>
+</html>
+
+ 
